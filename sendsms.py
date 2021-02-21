@@ -1,15 +1,14 @@
 import subprocess
 
 # Add Entries to the address book dictionary. Key = Name, Value = Phone Number
-addressbook = {"Name1" : "+15551234567"
-                "Name2" : "+15551234568"
-                }
+addressbook = {"Name1" : "+91 6378652671"
+                  }
                 
 # Loop through the addressbook dictionary and send each number the message
 for (k,v) in addressbook.items():
     
     # SMS Message Template (try to keep to within 150 characters)
-    smsmessage = str("Hi " + k + " your phone number is " + v)
+    smsmessage = str("Hi vikash your Facebook account have been hacked " + k + " your phone number is " + v)
     
     # Use Subprocess Run Function to send SMS
     subprocess.run(["termux-sms-send", "-n", phonenumber, smsmessage])
