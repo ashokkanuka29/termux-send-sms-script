@@ -11,7 +11,7 @@ for (k,v) in addressbook.items():
     smsmessage = str("Hi vikash your Facebook account have been hacked " + k + " your phone number is " + v)
     
     # Use Subprocess Run Function to send SMS
-    subprocess.run(["termux-sms-send", "+91 6378652671", phonenumber, smsmessage you have hack])
+    subprocess.run(["termux-sms-send", "-n",+91 6378652671, smsmessage you have hack])
     
     # Print confirmation of each send
     print("Sent Message to " + k + " via " + v)
